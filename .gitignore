@@ -1,0 +1,4 @@
+virtualenvironment
+__pycache__
+models/final_model.pth
+Jewelry_Recognition/jewelry/models/final_model.pth

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block body %}
+	<h1>Prediction</h1>
+	<!-- shows the image -->
+	<img src = '/static/img/{{value}}'>
+	<div>The jewelry is predicted to be: <b> {{predicted}} </b></div>
+	<div>
+	<p>Click <a href="/return-files/{{value}}" target="blank"><b><button class = 'btn btn-default'>Download</button></a></b> to download the image.</a>
+	</div>
+{% endblock %}
