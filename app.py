@@ -23,9 +23,10 @@ warnings.simplefilter("ignore")
 import boto3
 s3 = boto3.client('s3')
 
+if not os.path.exists('./Jewelry_Recognition/jewelry/models/final_model.pth'):
+	s3.download_file('bonaventure', 'final_model.pth', './Jewelry_Recognition/jewelry/models/final_model.pth')
 if not os.path.exists('./models/final_model.pth'):
 	s3.download_file('bonaventure', 'final_model.pth', './models/final_model.pth')
-
 
 
 # Init app
